@@ -1,3 +1,7 @@
+# Harden client using iptables
+#
+# [*role*]
+#   The type of client, changes the type of rules applied on the client
 class clients_iptables_hardening ( Enum['admin', 'user'] $role ) {
   include 'firewall'
 
